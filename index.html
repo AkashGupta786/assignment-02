@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sippline - Glass ka Mask</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f47b4c;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            color: white;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            z-index: 10;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 14px;
+        }
+
+        .buy-now-btn {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        /* Main Content */
+        .container {
+            display: flex;
+            height: 100%;
+            position: relative;
+        }
+
+        .content {
+            flex: 1;
+            padding-left: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            max-width: 600px;
+            z-index: 5;
+        }
+
+        h1 {
+            font-size: 52px;
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 30px;
+        }
+
+        .glass-mask-btn {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 15px 35px;
+            border-radius: 30px;
+            text-decoration: none;
+            width: fit-content;
+            font-weight: bold;
+        }
+
+        /* Visual Elements */
+        .image-section {
+            flex: 1;
+            position: relative;
+            background: linear-gradient(135deg, transparent 50%, white 50%);
+        }
+
+        .diamond-frame {
+            position: absolute;
+            top: 50%;
+            right: 10%;
+            transform: translateY(-50%) rotate(45deg);
+            width: 450px;
+            height: 450px;
+            border: 40px solid white;
+            overflow: hidden;
+            box-shadow: 20px 20px 50px rgba(0,0,0,0.2);
+        }
+
+        .diamond-frame img {
+            width: 150%;
+            height: 150%;
+            object-fit: cover;
+            transform: rotate(-45deg) translate(-20%, -10%);
+        }
+
+        /* Background Decorations */
+        .accent-bar {
+            position: absolute;
+            right: 0;
+            bottom: 50px;
+            width: 150px;
+            height: 40px;
+            background-color: white;
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Sippline</div>
+        <div class="nav-links">
+            <a href="#">Shop</a>
+            <a href="#">About</a>
+            <a href="#">Blogs</a>
+            <a href="#">Contact</a>
+        </div>
+        <a href="#" class="buy-now-btn">Buy Now</a>
+    </nav>
+
+    <div class="container">
+        <div class="content">
+            <h1>Sippline drinking shields – The "Glass ka Mask"</h1>
+            <p>Sippline Drinking Shield aims to protect the user from not just such fatal diseases but, also the mild ones such as common flu. Sippline drinking shield does the same job a face mask does, albeit differently.</p>
+            <a href="#" class="glass-mask-btn">Buy the Glass Mask!</a>
+        </div>
+
+        <div class="image-section">
+            <div class="diamond-frame">
+                <!-- Replace with actual image URL -->
+                <img src="https://tse2.mm.bing.net/th/id/OIP.O_onjnvwCFYedvXwJUOAewHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Person using Sippline">
+            </div>
+            <div class="accent-bar"></div>
+        </div>
+    </div>
+
+</body>
+</html>
